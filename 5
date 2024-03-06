@@ -1,0 +1,32 @@
+
+num = int(input("Введите четырехзначное число: "))
+
+first_digit = num // 1000
+second_digit = (num // 100) % 10
+third_digit = (num // 10) % 10
+fourth_digit = num % 10
+
+if (first_digit + second_digit) == (third_digit + fourth_digit):
+    print("Сумма двух первых цифр равна сумме двух последних.")
+else:
+    print("Сумма двух первых цифр не равна сумме двух последних.")
+
+sum_of_digits = first_digit + second_digit + third_digit + fourth_digit
+if sum_of_digits % 3 == 0:
+    print("Сумма цифр кратна трём.")
+else:
+    print("Сумма цифр не кратна трём.")
+
+t = int(input("Введите число t: "))
+
+product_of_digits = first_digit * second_digit * third_digit * fourth_digit
+
+if product_of_digits % t == 0:
+    print(f"Произведение цифр кратно {t}.")
+else:
+    print(f"Произведение цифр не кратно {t}.")
+
+if num == fourth_digit * 1000 + third_digit * 100 + second_digit * 10 + first_digit:
+    print("Число является палиндромом.")
+else:
+    print("Число не является палиндромом.")
