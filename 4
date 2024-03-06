@@ -1,0 +1,9 @@
+number = int(input("Введите трехзначное число: "))
+if number / 100 == number % 10 == (number / 10) % 10:
+    print("Все цифры одинаковы.")
+else:
+    print("Не все цифры одинаковы.")
+if number / 100 == number % 10 or (number / 10) % 10 == number % 10 or number / 100 == (number / 10) % 10:
+    print("Есть одинаковые цифры.")
+else:
+    print("Нет одинаковых цифр.")
